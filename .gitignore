@@ -1,4 +1,5 @@
 todoList/__pycache__/settings.cpython-39.pyc
+*.pyc
 .env
 db.sqlite3
 staticfiles/*
