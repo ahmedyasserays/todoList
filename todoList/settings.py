@@ -84,6 +84,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+from dj_database_url import config
+database_from_heroku = config(conn_max_age=600)
+DATABASES['default'].update(database_from_heroku)
 
 
 # Password validation
